@@ -1,0 +1,31 @@
+<h2 style="text-align:center; color:#2C3E50; font-family:'Segoe UI', sans-serif; margin-bottom: 25px;">
+    Welcome to PyAutomate AI Dashboard
+  </h2>
+  
+  <form method="POST" enctype="multipart/form-data"
+        style="width: 400px; margin: auto; padding: 30px; background: #ffffff; 
+               border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+               font-family:'Segoe UI', sans-serif; text-align:center;">
+  
+    <label style="font-weight:600; color:#34495E; margin-bottom:10px; display:block;">
+      Upload Document (Image):
+    </label>
+    <input type="file" name="file"
+           style="padding:10px; border:1px solid #ccc; border-radius:8px; 
+                  margin-bottom:20px; width:100%; font-size:14px;"/>
+  
+    <input type="submit" value="Extract Text" 
+           style="width:100%; padding:12px; background-color:#2C3E50; 
+                  color:white; border:none; border-radius:8px; font-size:16px; 
+                  font-weight:bold; cursor:pointer; transition: background 0.3s ease;">
+  </form>
+  
+  {% if result %}
+    <div style="width: 80%; margin: 30px auto; background: #f4f4f4; padding: 20px; 
+                border-radius: 10px; font-family:'Courier New', monospace; 
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <h3 style="color:#27ae60; font-family:'Segoe UI', sans-serif;">📄 Extracted Text:</h3>
+      <pre style="white-space: pre-wrap; color:#333;">{{ result }}</pre>
+    </div>
+  {% endif %}
+  

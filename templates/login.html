@@ -1,0 +1,43 @@
+<h2 style="text-align:center; color:#3F51B5; font-family:'Segoe UI', sans-serif; margin-bottom: 20px;">
+    Login to PyAutomate AI
+  </h2>
+  
+  <form method="POST" 
+        style="width: 350px; margin: auto; padding: 30px; background: #ffffff; 
+               border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+               font-family:'Segoe UI', sans-serif; transition: all 0.3s ease;">
+  
+    <label style="font-weight:600; color:#333; margin-bottom:5px; display:block;">
+      Username:
+    </label>
+    <input type="text" name="username" 
+           style="width:100%; padding:12px 10px; margin-bottom:20px; 
+                  border:1px solid #ccc; border-radius:8px; font-size:16px;
+                  transition: border-color 0.3s ease;">
+    
+    <label style="font-weight:600; color:#333; margin-bottom:5px; display:block;">
+      Password:
+    </label>
+    <input type="password" name="password" 
+           style="width:100%; padding:12px 10px; margin-bottom:25px; 
+                  border:1px solid #ccc; border-radius:8px; font-size:16px;
+                  transition: border-color 0.3s ease;"/>
+  
+    <input type="submit" value="Login" 
+           style="width:100%; padding:12px; background-color:#3F51B5; 
+                  color:white; border:none; border-radius:8px; font-size:16px; 
+                  font-weight:bold; cursor:pointer; transition: background 0.3s ease;">
+  </form>
+  
+  <script>
+    // Optional JavaScript for a subtle input focus effect
+    document.querySelectorAll('input[type="text"], input[type="password"]').forEach(input => {
+      input.addEventListener('focus', () => {
+        input.style.borderColor = '#3F51B5';
+      });
+      input.addEventListener('blur', () => {
+        input.style.borderColor = '#ccc';
+      });
+    });
+  </script>
+  
