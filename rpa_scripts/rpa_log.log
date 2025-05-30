@@ -1,0 +1,213 @@
+2025-05-29 09:16:58,240 - INFO - ====== WebDriver manager ======
+2025-05-29 09:17:01,508 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-29 09:17:01,757 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-29 09:17:01,897 - INFO - Driver [C:\Users\USER\.wdm\drivers\chromedriver\win64\136.0.7103.113\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-29 09:17:03,547 - INFO - Opening login page:  https://demo.opencart.com/admin/
+2025-05-29 09:17:06,908 - INFO - Filling login form...
+2025-05-29 09:17:06,940 - ERROR - An error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="username"]"}
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0066FC03+61635]
+	GetHandleVerifier [0x0066FC44+61700]
+	(No symbol) [0x004905D3]
+	(No symbol) [0x004D899E]
+	(No symbol) [0x004D8D3B]
+	(No symbol) [0x00520E12]
+	(No symbol) [0x004FD2E4]
+	(No symbol) [0x0051E61B]
+	(No symbol) [0x004FD096]
+	(No symbol) [0x004CC840]
+	(No symbol) [0x004CD6A4]
+	GetHandleVerifier [0x008F4523+2701795]
+	GetHandleVerifier [0x008EFCA6+2683238]
+	GetHandleVerifier [0x0090A9EE+2793134]
+	GetHandleVerifier [0x006868C5+155013]
+	GetHandleVerifier [0x0068CFAD+181357]
+	GetHandleVerifier [0x00677458+92440]
+	GetHandleVerifier [0x00677600+92864]
+	GetHandleVerifier [0x00661FF0+5296]
+	BaseThreadInitThunk [0x75975D49+25]
+	RtlInitializeExceptionChain [0x7736CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x7736CF81+561]
+Traceback (most recent call last):
+  File "D:\PyAutomateAI\rpa_scripts\rpa_login_bot.py", line 40, in <module>
+    driver.find_element(By.NAME, "username").send_keys(username)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="username"]"}
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0066FC03+61635]
+	GetHandleVerifier [0x0066FC44+61700]
+	(No symbol) [0x004905D3]
+	(No symbol) [0x004D899E]
+	(No symbol) [0x004D8D3B]
+	(No symbol) [0x00520E12]
+	(No symbol) [0x004FD2E4]
+	(No symbol) [0x0051E61B]
+	(No symbol) [0x004FD096]
+	(No symbol) [0x004CC840]
+	(No symbol) [0x004CD6A4]
+	GetHandleVerifier [0x008F4523+2701795]
+	GetHandleVerifier [0x008EFCA6+2683238]
+	GetHandleVerifier [0x0090A9EE+2793134]
+	GetHandleVerifier [0x006868C5+155013]
+	GetHandleVerifier [0x0068CFAD+181357]
+	GetHandleVerifier [0x00677458+92440]
+	GetHandleVerifier [0x00677600+92864]
+	GetHandleVerifier [0x00661FF0+5296]
+	BaseThreadInitThunk [0x75975D49+25]
+	RtlInitializeExceptionChain [0x7736CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x7736CF81+561]
+
+2025-05-29 09:17:06,968 - INFO - Closing browser...
+2025-05-29 09:17:56,259 - INFO - ====== WebDriver manager ======
+2025-05-29 09:17:59,267 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-29 09:17:59,439 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-29 09:17:59,622 - INFO - Driver [C:\Users\USER\.wdm\drivers\chromedriver\win64\136.0.7103.113\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-29 09:18:00,773 - INFO - Opening login page:  https://demo.opencart.com/admin/
+2025-05-29 09:18:02,573 - INFO - Filling login form...
+2025-05-29 09:18:02,631 - ERROR - An error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="username"]"}
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0066FC03+61635]
+	GetHandleVerifier [0x0066FC44+61700]
+	(No symbol) [0x004905D3]
+	(No symbol) [0x004D899E]
+	(No symbol) [0x004D8D3B]
+	(No symbol) [0x00520E12]
+	(No symbol) [0x004FD2E4]
+	(No symbol) [0x0051E61B]
+	(No symbol) [0x004FD096]
+	(No symbol) [0x004CC840]
+	(No symbol) [0x004CD6A4]
+	GetHandleVerifier [0x008F4523+2701795]
+	GetHandleVerifier [0x008EFCA6+2683238]
+	GetHandleVerifier [0x0090A9EE+2793134]
+	GetHandleVerifier [0x006868C5+155013]
+	GetHandleVerifier [0x0068CFAD+181357]
+	GetHandleVerifier [0x00677458+92440]
+	GetHandleVerifier [0x00677600+92864]
+	GetHandleVerifier [0x00661FF0+5296]
+	BaseThreadInitThunk [0x75975D49+25]
+	RtlInitializeExceptionChain [0x7736CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x7736CF81+561]
+Traceback (most recent call last):
+  File "D:\PyAutomateAI\rpa_scripts\rpa_login_bot.py", line 40, in <module>
+    driver.find_element(By.NAME, "username").send_keys(username)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="username"]"}
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0066FC03+61635]
+	GetHandleVerifier [0x0066FC44+61700]
+	(No symbol) [0x004905D3]
+	(No symbol) [0x004D899E]
+	(No symbol) [0x004D8D3B]
+	(No symbol) [0x00520E12]
+	(No symbol) [0x004FD2E4]
+	(No symbol) [0x0051E61B]
+	(No symbol) [0x004FD096]
+	(No symbol) [0x004CC840]
+	(No symbol) [0x004CD6A4]
+	GetHandleVerifier [0x008F4523+2701795]
+	GetHandleVerifier [0x008EFCA6+2683238]
+	GetHandleVerifier [0x0090A9EE+2793134]
+	GetHandleVerifier [0x006868C5+155013]
+	GetHandleVerifier [0x0068CFAD+181357]
+	GetHandleVerifier [0x00677458+92440]
+	GetHandleVerifier [0x00677600+92864]
+	GetHandleVerifier [0x00661FF0+5296]
+	BaseThreadInitThunk [0x75975D49+25]
+	RtlInitializeExceptionChain [0x7736CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x7736CF81+561]
+
+2025-05-29 09:18:02,637 - INFO - Closing browser...
+2025-05-30 19:14:02,219 - INFO - ====== WebDriver manager ======
+2025-05-30 19:14:05,523 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-30 19:14:06,153 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-30 19:14:06,404 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-30 19:14:07,232 - INFO - WebDriver version 136.0.7103.113 selected
+2025-05-30 19:14:07,236 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.113/win32/chromedriver-win32.zip
+2025-05-30 19:14:07,236 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.113/win32/chromedriver-win32.zip
+2025-05-30 19:14:07,633 - INFO - Driver downloading response is 200
+2025-05-30 19:14:12,543 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-30 19:14:13,076 - INFO - Driver has been saved in cache [C:\Users\USER\.wdm\drivers\chromedriver\win64\136.0.7103.113]
+2025-05-30 19:14:16,831 - INFO - Opening login page:  https://demo.opencart.com/admin/
+2025-05-30 19:14:25,303 - INFO - Filling login form...
+2025-05-30 19:14:25,327 - ERROR - An error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="username"]"}
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0109FC03+61635]
+	GetHandleVerifier [0x0109FC44+61700]
+	(No symbol) [0x00EC05D3]
+	(No symbol) [0x00F0899E]
+	(No symbol) [0x00F08D3B]
+	(No symbol) [0x00F50E12]
+	(No symbol) [0x00F2D2E4]
+	(No symbol) [0x00F4E61B]
+	(No symbol) [0x00F2D096]
+	(No symbol) [0x00EFC840]
+	(No symbol) [0x00EFD6A4]
+	GetHandleVerifier [0x01324523+2701795]
+	GetHandleVerifier [0x0131FCA6+2683238]
+	GetHandleVerifier [0x0133A9EE+2793134]
+	GetHandleVerifier [0x010B68C5+155013]
+	GetHandleVerifier [0x010BCFAD+181357]
+	GetHandleVerifier [0x010A7458+92440]
+	GetHandleVerifier [0x010A7600+92864]
+	GetHandleVerifier [0x01091FF0+5296]
+	BaseThreadInitThunk [0x75975D49+25]
+	RtlInitializeExceptionChain [0x7736CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x7736CF81+561]
+Traceback (most recent call last):
+  File "D:\PyAutomateAI\rpa_scripts\rpa_login_bot.py", line 40, in <module>
+    driver.find_element(By.NAME, "username").send_keys(username)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="username"]"}
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0109FC03+61635]
+	GetHandleVerifier [0x0109FC44+61700]
+	(No symbol) [0x00EC05D3]
+	(No symbol) [0x00F0899E]
+	(No symbol) [0x00F08D3B]
+	(No symbol) [0x00F50E12]
+	(No symbol) [0x00F2D2E4]
+	(No symbol) [0x00F4E61B]
+	(No symbol) [0x00F2D096]
+	(No symbol) [0x00EFC840]
+	(No symbol) [0x00EFD6A4]
+	GetHandleVerifier [0x01324523+2701795]
+	GetHandleVerifier [0x0131FCA6+2683238]
+	GetHandleVerifier [0x0133A9EE+2793134]
+	GetHandleVerifier [0x010B68C5+155013]
+	GetHandleVerifier [0x010BCFAD+181357]
+	GetHandleVerifier [0x010A7458+92440]
+	GetHandleVerifier [0x010A7600+92864]
+	GetHandleVerifier [0x01091FF0+5296]
+	BaseThreadInitThunk [0x75975D49+25]
+	RtlInitializeExceptionChain [0x7736CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x7736CF81+561]
+
+2025-05-30 19:14:25,369 - INFO - Closing browser...

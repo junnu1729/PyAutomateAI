@@ -1,31 +1,106 @@
-<h2 style="text-align:center; color:#2C3E50; font-family:'Segoe UI', sans-serif; margin-bottom: 25px;">
-    Welcome to PyAutomate AI Dashboard
-  </h2>
-  
-  <form method="POST" enctype="multipart/form-data"
-        style="width: 400px; margin: auto; padding: 30px; background: #ffffff; 
-               border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
-               font-family:'Segoe UI', sans-serif; text-align:center;">
-  
-    <label style="font-weight:600; color:#34495E; margin-bottom:10px; display:block;">
-      Upload Document (Image):
-    </label>
-    <input type="file" name="file"
-           style="padding:10px; border:1px solid #ccc; border-radius:8px; 
-                  margin-bottom:20px; width:100%; font-size:14px;"/>
-  
-    <input type="submit" value="Extract Text" 
-           style="width:100%; padding:12px; background-color:#2C3E50; 
-                  color:white; border:none; border-radius:8px; font-size:16px; 
-                  font-weight:bold; cursor:pointer; transition: background 0.3s ease;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PyAutomate AI - Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px 0;
+      color: #2C3E50;
+    }
+    form {
+      width: 400px;
+      margin: auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    label {
+      font-weight: 600;
+      color: #34495E;
+      margin-bottom: 10px;
+      display: block;
+    }
+    input[type="file"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      width: 100%;
+      font-size: 14px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #2C3E50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #1a252f;
+    }
+    .result-box {
+      width: 80%;
+      margin: 30px auto;
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: 'Courier New', monospace;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      color: #333;
+      white-space: pre-wrap;
+    }
+    .ai-result-box {
+      width: 80%;
+      margin: 10px auto 40px auto;
+      background: #e8f0fe;
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-family: 'Segoe UI', sans-serif;
+      box-shadow: 0 4px 10px rgba(63,81,181,0.2);
+      color: #3F51B5;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2C3E50;
+    }
+  </style>
+</head>
+<body>
+  <h2>Welcome to PyAutomate AI Dashboard</h2>
+
+  <form method="POST" enctype="multipart/form-data">
+    <label>Upload Document (Image or PDF):</label>
+    <input type="file" name="file" accept=".png,.jpg,.jpeg,.pdf" required />
+    <input type="submit" value="Extract Text" />
   </form>
-  
+
   {% if result %}
-    <div style="width: 80%; margin: 30px auto; background: #f4f4f4; padding: 20px; 
-                border-radius: 10px; font-family:'Courier New', monospace; 
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-      <h3 style="color:#27ae60; font-family:'Segoe UI', sans-serif;">📄 Extracted Text:</h3>
-      <pre style="white-space: pre-wrap; color:#333;">{{ result }}</pre>
+    <div class="result-box">
+      <h3 style="color:#27ae60;">📄 Extracted Text:</h3>
+      {{ result }}
     </div>
   {% endif %}
-  
+
+  {% if ai %}
+    <div class="ai-result-box">
+      🧠 AI Classification Result: {{ ai }}
+    </div>
+  {% endif %}
+</body>
+</html>
