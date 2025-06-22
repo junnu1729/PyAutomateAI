@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PyAutomate AI
 
 An intelligent automation platform combining RPA (Robotic Process Automation) and AI to streamline enterprise workflows.
@@ -20,3 +21,7 @@ An intelligent automation platform combining RPA (Robotic Process Automation) an
 ## Folder Structure
 
 PyAutomateAI/ ├── README.md ├── requirements.txt ├── automation/ │ └── open_notepad.py ├── data/ └── models/
+=======
+# PyAutomateAI
+PyAutomate AI is an enterprise automation platform using Python, AI, RPA, and cloud tech. It automates repetitive tasks, provides real-time monitoring, smart decision-making, and a user-friendly dashboard. Ideal for boosting productivity with secure APIs, alerts, and scalable architecture.
+>>>>>>> ad6f882d188d71e38f586ee92b52fef52d10b3ba
